@@ -5,3 +5,6 @@ body {
     line-height: 20px;
     color: #ff4200;
   }
+article {
+    max-width: 1080px;
+  } 
