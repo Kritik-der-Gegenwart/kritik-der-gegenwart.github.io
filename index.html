@@ -16,7 +16,6 @@ font-size: 1rem;
 line-height: 1.25;
 color: #ff4200;
 padding: 2rem;}
-
 #box 
 {max-width: 550px;
 width: auto;
@@ -27,15 +26,19 @@ margin: auto;}
 border-radius: 50%;}
 .header_subline
 {border: none !important;}
-
-
-    #content {
-    width: auto;
-    display: block;
-    border: solid 2px #ff4200;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    }
+#content {
+width: auto;
+display: inline-block;
+border: solid 2px #ff4200;
+border-radius: 20px;
+margin-bottom: 10px;}
+span.a {
+display: inline; /* the default for span */
+width: auto;
+height: 1.25rem;
+color: #bdccd4;
+border-radius: 50%;  
+background-color: #ff4200;}
 </style>
 
 <body>
@@ -44,7 +47,9 @@ border-radius: 50%;}
 <div class="header">
 <h1>More human than human</h1>
 <div class="header_subline">
+<span class="a">
 Veranstaltungsreihe zur Kritik des Transhumanismus
+</span>
 </div>
 </div>
 
