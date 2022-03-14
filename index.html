@@ -169,11 +169,21 @@ padding: .5rem 1rem;}
             <input 
             id="collapsible" 
             class="toggle" 
-            type="checkbox">
+            type="checkbox"
+            name="collapsible" 
+            value="1" 
+            onchange="GetMarkedItems(1)">
             <label 
             for="collapsible" 
             class="lbl-toggle" >+<br>&minus;
             </label>
+
+            
+<!--checkbox default-->
+<script 
+type=text/javascript>
+document.getElementById("collapsible").checked = false;
+</script>
                 
             
             <div class="collapsible-text">
@@ -240,3 +250,9 @@ padding: .5rem 1rem;}
 </div>
 
 </html>
+
+<!--checkbox default-->
+<script 
+    type=text/javascript>
+    document.getElementById("collapsible").checked = false;
+</script>
