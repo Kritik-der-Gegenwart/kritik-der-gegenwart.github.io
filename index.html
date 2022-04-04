@@ -2,128 +2,120 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>More human than human</title>
+<title>More human than human?</title>
 
 <style>
-/*css*/
-/* {
-outline: solid 1px transparent;
-}*/
-body 
-{width: auto;
-text-decoration: none;
-background-color: #bdccd4;
-font-family: Helvetica, sans-serif;
+* 
+{
+max-width: 600px;
+width: auto;
+margin: 0 auto;
+
+font-family: Helvetica,sans-serif;
 font-size: 1.1rem;
 line-height: 1.35;
-color: #ff4200;
-padding: 1rem;}
-#box 
-{max-width: 550px;
-width: auto;
-display: block;
-margin: 0 auto;}
-.header 
-{border: solid 1px #ff4200;
-border-radius: 50%;
-box-shadow: 0px 0px 30px 30px inset #ff4200;
-display: inline-block;}
-.header_subline
-{border: none !important;
-display: inline-block;}
-#content {
-width: auto;
-display: inline-block;
-border: solid 2px #ff4200;
-border-radius: 20px;
-margin: 0 auto;
-margin-bottom: 10px; }
-
-/*datenblock*/
-.ort_datum {line-height: 1.75rem;}
-span.a {
-display: inline-block;
-width: min-content;
-height: 1.25rem;
-padding: 8px;
-padding-bottom: 8px;
-color: #bdccd4;
-font-style: normal;
 font-weight: normal;
-border-radius: 25px;  
-background-color: #ff4200;
-margin-bottom: 10px;}
-span.b {
+text-decoration: none;
 color: #ff4200;
-background-color: #bdccd4;
-border: solid 1px #ff4200;
-display: inline-block;
-width: min-content;
-height: 1.25rem;
-padding: 8px;
-padding-bottom: 8px;
-border-radius: 20px;
-margin-bottom: 10px;
 }
 
-/* +/- text */
 
-input[type='checkbox'] 
-{display: none;} 
-label 
-{position: -webkit-sticky;
-position: sticky;
-top: 5px; right: 5px;}
-.wrap-collabsible 
-{margin: 1.2rem 0;} 
-.lbl-toggle 
-{display: inline-block; 
-font-weight: normal; 
-font-family: Helvetica, sans-serif; 
-font-size: 1.5rem; 
-text-transform: uppercase; text-align: center; 
-/*padding: 1rem;*/ 
-color: #bdccd4; background: #ff4200;
-box-shadow: 0px 0px 10px 3px white;
-cursor: pointer; 
+body
+{padding: 1rem;
+background-color: #bdccd4;}
+
+h1, h2, h3
+{
+font-weight: normal;
+}
+
+p 
+{margin-bottom: 0.25rem;
+margin-top: 0.25rem}
+
+p.menu
+{margin-bottom: 0.75rem;
+margin-top: 0.75rem}
+
+/*time
+{color:#bdccd4 !important;}*/
+
+/*a
+{color:#ff4200;
+text-shadow: white 1px 0 12px ;
+overflow:visible !important;}
+a:hover
+{
+text-shadow: white 1px 0 15px;
+overflow:visible !important;}*/
+
+span.a 
+{
+font-size: 1.1rem;
+border: solid 1px #ff4200;
+border-radius: 20px;
+padding-top: 0.15rem;
+padding-bottom: 0.05rem;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
 width: min-content;
 height: min-content;
-padding: 8px;
-padding-bottom: 8px;
+color:#bdccd4;
+background-color: #ff4200;}
+
+span.b
+{
+font-size: 1.1rem;
+border: solid 1px #ff4200;
 border-radius: 20px;
-margin-bottom: 10px;
-transition: all 0.25s ease-out;} 
-.lbl-toggle:hover 
-{box-shadow: 0px 0px 15px 5px white; } 
-.lbl-toggle::before 
-{/*text: 'test';*/
-display: inline-block; 
-border-top: none; 
-border-bottom: none; 
-border-left: none; 
-vertical-align: middle; margin-right: .7rem; 
-transform: translateY(-2px); 
-transition: transform .2s ease-out; } 
-.toggle:checked+.lbl-toggle::before 
-/*{ transform: rotate(90deg) translateX(-3px); }*/ 
-.collapsible-text 
-{max-height: 0px; 
-overflow: hidden;
-transition: max-height .25s ease-in-out;} 
-.toggle:checked + .lbl-toggle + .collapsible-text 
-{max-height: 0px;
-overflow: hidden; } 
-.toggle:checked+.lbl-toggle 
-/*{ border-bottom-right-radius: 0; 
-border-bottom-left-radius: 0; }*/
-.collapsible-text .text-inner 
-{background: rgba(0, 105, 255, .2); 
-/*border-bottom: 1px solid rgba(0, 105, 255, .45); */
-border-bottom-left-radius: 7px; 
-border-bottom-right-radius: 7px; 
-padding: .5rem 1rem;} 
-.collapsible-text p 
-{ margin-bottom: 0; }
+padding-top: 0.15rem;
+padding-bottom: 0.05rem;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+width: min-content;
+height: min-content;
+color: #ff4200;
+background-color: #bdccd4;}
+
+span.c
+{
+font-size: 1.1rem;
+border: solid 1px #d3dfe5;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+padding-top: 0.15rem;
+padding-bottom: 0.05rem;
+padding-left: 0.5rem;
+padding-right: 0.20rem;
+margin-right: -0.37rem;
+width: min-content;
+height: min-content;
+color: #ff4200;
+background-color: #d3dfe5;}
+
+menu 
+{
+list-style: none;
+padding-left: 0;
+margin-bottom: 1rem;
+}​
+
+
+article 
+{margin-top: 1.75rem;}
+ 
+p.article 
+{
+margin-bottom: 0.75rem;
+}
+
+h3
+{margin-top: 1.75rem;
+margin-bottom: 1rem;}
+
+h2
+{margin-bottom: 1rem;}
+
 
 </style>
 
@@ -131,128 +123,258 @@ padding: .5rem 1rem;}
 
 
 <body>
-<div id="box">
-
-<div class="header">
-<h1>More human than human</h1>
-<div class="header_subline">
-<h1>Veranstaltungsreihe zur Kritik des Transhumanismus</h1>
-</div>
-</div>
-
-<content>
-    <contentheader>
-        <h3>
-            Transhumanismus: zwischen Mythologie und Ideologie
-            <br>Lesung und Diskussion mit Max Franz Johann Schnetker
-        </h3>
-    </contentheader>
-    <ort_datum>
-    <p><span class="a">Mi.&nbsp;13.&nbsp;April</span>
-    <span class="a">19:00</span><br>
-    <span class="b">Universität&nbsp;zu&nbsp;Köln</span> 
-    <span class="b">Hörsaal&nbsp;A1&nbsp;(Hörsaalgebäude)</span> 
-    <span class="b">Universitätsstraße&nbsp;35</span>
-    <span class="b">50931&nbsp;Köln</span>
+    <h1>
+    <span class="a">Kritik&nbsp;der&nbsp;Gegenwart</span> 
+    ist ein Zusammenhang, der Kritische Theorie in Köln organisiert. 
+    <span class="c">More</span> 
+    <span class="c">human</span> 
+    <span class="c">than</span> 
+    <span class="c">human?</span>&nbsp   
+    ist die erste Veranstaltungsreihe in dieser Absicht und befasst sich mit der Kritik des Transhumanismus. <br> ●
+    </h1>
+    <h2>
+    Sie besteht aus drei Teilen, am 
+    <span class="b"><time datetime="2022-04-13T19:30">13.&nbsp;April</time></span>,
+    am
+    <span class="b"><time datetime="2022-04-27T19:30">27.&nbsp;April</time></span>,
+    und am  
+    <span class="b"><time datetime="2022-05-11T19:30">11.&nbsp;Mai&nbsp;2022</time></span>,
+    die jeweils um <span class="b">19:30</span> stattfinden, in den Räumen der 
+    <span class="b">Uni&nbsp;Köln</span>.
+    Die genauen Räume werden in Kürze bekanntgegeben, an dieser Stelle. 
+    Wir sind auch auch auf 
+    <span class="b"><a href="https://www.facebook.com/kritik.der.gegenwart">➝Facebook</a></span> und 
+    <span class="b"><a href="https://www.instagram.com/kritik_der_gegenwart/?hl=en">➝Instagram</a></span> zu finden, und unter dieser <span class="b"><a href="mailto:KritikderGegenwart@riseup.net">➝Email</a></span> zu erreichen.
+    <br> ●
+    </h2>
+    
+    <h3>
+    Im ersten Teil spricht 
+    <span class="a">Max&nbsp;Schnetker</span>
+    über <br>
+    <span class="c">Transhumanismus</span> 
+    <span class="c">zwischen</span>
+    <span class="c">Mythologie</span>
+    <span class="c">und</span>
+    <span class="c">Ideologie</span>
+    , darauf folgt 
+    <span class="a">Michael&nbsp;Hagemeister</span> 
+    unter dem Titel <br>
+    <span class="c">»Unser</span>
+    <span class="c">Körper</span>
+    <span class="c">muss</span>
+    <span class="c">unser</span>
+    <span class="c">Werk</span>
+    <span class="c">sein!«</span> 
+    <br> 
+    <span class="c">Biopolitische</span>
+    <span class="c">Projekte</span>
+    <span class="c">der</span>
+    <span class="c">frühen</span>
+    <span class="c">Sowjetzeit</span>
+    . <br>
+    Im vorerst letzten Teil befasst sich <span class="a">Leonie&nbsp;Wellmann</span> mit 
+    <span class="c">Materialistischen</span>
+    <span class="c">Deutungen</span>
+    <span class="c">von</span>
+    <span class="c">Auferstehung</span>
+    <span class="c">und</span>
+    <span class="c">Erlösung</span>
+    <span class="c">in</span>
+    <span class="c">der</span>
+    <span class="c">kritischen</span>
+    <span class="c">Theorie</span>.
+    <br> ●
+    <br>
+    </h3>
+    
+    <menu>
+    
+    Hier sind die Ankündigungstexte zu den jeweiligen Vorträgen zu finden:
+    
+    <p class="menu">
+    <span class="b">
+    <a href="#schnetker_text"
+    >
+    ➝<time datetime="2022-04-13T19:30">13.&nbsp;April&nbsp;2022&nbsp;19:30</time>
+    </span>
+    <br>
+    <span class="a">Max&nbsp;Schnetker</span> <br>
+    <span class="c">Transhumanismus</span> 
+    <span class="c">zwischen</span>
+    <span class="c">Mythologie</span>
+    <span class="c">und</span>
+    <span class="c">Ideologie</span>
+    </a> 
     </p>
-    </ort_datum>
     
-    <text>
-
-        <div class="text-outer">
-            <p>
-             Im deutschsprachigen Raum beflügeln Ideen aus dem Transhumanismus Debatten in den Geisteswissenschaften und füllen periodisch die Feuilletons der Zeitungen. Der Horizont dieser geisteswissenschaftlichen und journalistischen Aneignungen des Themas ist meist kritisch: Gewarnt wird vor einem drohenden Verlust des Menschseins, der mit den Vorteilen technischer Veränderungen auszutarieren sei.
-            </p>
-        </div>
-
-        <div class="wrap-collabsible">
-            <input 
-            id="collapsible" 
-            class="toggle" 
-            type="checkbox"
-            name="collapsible" 
-            value="1" 
-            onchange="GetMarkedItems(1)">
-            <label 
-            for="collapsible" 
-            class="lbl-toggle" >+<br>&minus;
-            </label>
-
-            
-<!--checkbox default-->
-<script 
-type=text/javascript>
-document.getElementById("collapsible").checked = false;
-</script>
-                
-            
-            <div class="collapsible-text">
-                
-              <div class="text-inner">
-                    
-                    <p>
-                    Einig sind sich Enthusiast*innen wie Kritiker*innen allerdings meist in einer Annahme: sie gehen davon aus, dass die Behauptungen des Transhumanismus über die baldige technische Steuerbarkeit der menschlichen Konstitution realistisch sind. Anders sieht die Reaktion vieler Fachwissenschaftler*innen aus den Bereichen Molekularbiologie, Genetik, KI-Forschung oder Nanotechnologie aus: sie schlagen angesichts der Behauptungen des Transhumanismus die Hände über dem Kopf zusammen.
-                    </p>
-                    <p>
-                    In dieser Veranstaltung soll dargelegt werden, dass der Transhumanismus als Neuformulierung mythologischer Narrative zu begreifen ist, welche im Digitalen Kapitalismus eine spezifische Ideologische Funktion erfüllen. Die Hauptgefahr des Transhumanismus liegt nicht darin, dass die von ihm behaupteten technologischen Eingriffe ins Menschsein Realität werden. Sie liegt darin, dass Eugenik, Sozialdarwinismus, Antiegalitarismus und neoliberale Marktgläubigkeit zu seinen Stichwortgebern gehören. Damit wird er zur paradigmatischen Ideologie von Gesellschaften, die auf radikale weise Wohlstand in den Händen einer kleinen Zahl von Technologieunternehmen konzentrieren.
-                    </p>
-                    <p>
-                    Zum Beginn der Veranstaltung wird es einen kurzen Inputvortrag geben, der einen Überblick über das Thema gibt. Anschließend folgt eine Lesung aus dem Buch Transhumanistische Mythologie: Rechte Utopien einer technologischen Erlösung durch künstliche Intelligenz dass sich mit einer spezifischen Spielart des Transhumanismus, dem Glauben an eine gottgleiche künstliche Superintelligenz, befasst.
-                    </p>
-                    <p> 
-                     Max Franz Johann Schnetker promoviert an der Uni Bonn in Soziologie zu technizistischen Ideologien im Digitalen Kapitalismus.
-                    </p>
-              </div>
-            </div>
-        </div>
-    </text>
-
-</content>
-
-<content>
-    <contentheader>
-        <h3>
-            Die Überwindung des Todes in der älteren Kritischen Theorie
-            <br>Lesung und Diskussion mit Leonie Wellmann
-        </h3>
-    </contentheader>
-    <ort_datum>
-        <p><span class="a">Mi.&nbsp;13.&nbsp;April</span>
-            <span class="a">19:00</span><br>
-            <span class="b">Universität&nbsp;zu&nbsp;Köln</span> 
-            <span class="b">Hörsaal&nbsp;A1&nbsp;(Hörsaalgebäude)</span> 
-            <span class="b">Universitätsstraße&nbsp;35</span>
-            <span class="b">50931&nbsp;Köln</span>
-            </p>
-    </ort_datum>
+    <p class="menu">
+    <span class="b">
+    <a href="#hagemeister_text"
+    > 
+    ➝<time datetime="2022-04-27T19:30">27.&nbsp;April&nbsp;2022&nbsp;19:30</time>
+    </span>
+    <br>
+    <span class="a">Michael&nbsp;Hagemeister</span> <br>
+    <span class="c">»Unser</span>
+    <span class="c">Körper</span>
+    <span class="c">muss</span>
+    <span class="c">unser</span>
+    <span class="c">Werk</span>
+    <span class="c">sein!«</span> <br>
+    <span class="c">Biopolitische</span>
+    <span class="c">Projekte</span>
+    <span class="c">der</span>
+    <span class="c">frühen</span>
+    <span class="c">Sowjetzeit</span>
+    </a>
+    </p>
     
-    <text>
+    <p class="menu">
+    <span class="b">
+    <a href="#wellmann_text"
+    >
+    ➝<time datetime="2022-05-11T19:30">11.&nbsp;Mai 2022,&nbsp;19:30</time>
+    </span>
+    <br>
+    <span class="a">Leonie&nbsp;Wellmann</span> <br>
+    <span class="c">Materialistischen</span>
+    <span class="c">Deutungen</span>
+    <span class="c">von</span>
+    <span class="c">Auferstehung</span>
+    <span class="c">und</span>
+    <span class="c">Erlösung</span>
+    <span class="c">in</span>
+    <span class="c">der</span>
+    <span class="c">kritischen</span>
+    <span class="c">Theorie</span>
+    </a> 
+    </p>
+    
+    <p>
+    <span class="b">
+    <a href="#intro_text"
+    > 
+    ➝Unser Einführungstext ist hier zu finden
+    </a>
+    </span>
+    <br> ●
+    </p>
+    </menu>
 
-        <p>
-            Als Reaktion auf den Tod Kracauers schreibt Bazon Brock 1967: „Der Tod muß abgeschafft werden, diese verdammte Schweinerei muß aufhören. [...] Der Tod Siegfried Kracauers ist wie jeder ein ungeheuerlicher Skandal, gegen den ich protestiere.“            
-        </p>
-        <p>
-            Solches Aufbegehren richtet sich gegen das ideologische „Einvernehmen mit dem Tod“ (Marcuse). Für das utopische Bewusstsein ist die Abschaffung des Todes „nicht etwas Schreckliches“, sondern „das, was man eigentlich will“ (Adorno). Kritische Theorie ist zugleich solidarisch mit den Lebenden, deren Leiden sie im Diesseits abschaffen will, und hellhörig für „das stumme Plädoyer der Toten“ (Kracauer).
-        </p>
-        <p>
-            Kontroversen über die Abschaffung des Todes führt die kritische Theorie seit ihren Anfängen. Der Vortrag fragt danach, warum und wie sich theologische Motive wie die ‚Auferstehung des Fleisches‘ als Konvergenzpunkte von Theologie und Materialismus verstehen lassen – und warum Adorno zufolge die Auferstehung der Toten „auf dem Autofriedhof“ stattfinden müsste.
-        </p>
-        <p>
-            Historisch rückblickend lässt sich fragen, ob der Tod tatsächlich „die härteste Gegenutopie“ (Bloch) darstellt, oder ob diese in der nationalsozialistischen Todesmaschinerie schon verwirklicht wurde. Für die überlebenden kritischen Theoretiker wird angesichts dessen die jüdisch-messianistische „Hoffnung auf Erlösung, die wir für die Toten hegen“ (Benjamin) umso fragiler, die Notwendigkeit der erinnernden Solidarität mit den Opfern umso dringlicher.
-        </p>
-        <p>
-            Leonie Wellmann (Information zur Person)
-        </p>
-    </text>
-</content>
-
-</div>    
-</div>
-
+    <article id="intro_text">
+    <h3>
+    <span class="c">More</span> 
+    <span class="c">human</span> 
+    <span class="c">than</span> 
+    <span class="c">human?</span>
+    </h3> 
+    <p class="article">
+    In vergangenen Zeiten war es den Religionen vorbehalten, das ewige Leben zu versprechen. Heute gewinnen diese Versprechen unter neuen Vorzeichen wieder an Einfluss. Der sogenannte Transhumanismus hofft auf die langfristige Überwindung von Tod und Leid mithilfe moderner Wissenschaft. Während die einen dabei auf Fortschritte der Gentechnologie vertrauen, träumen prominente Köpfe des Silicon Valley von der Verschmelzung von Mensch und Maschine.
+    </p>
+    <p>
+    Es gibt gute Gründe, solchen Erzählungen zu misstrauen, zumal sie oft der Werbung für die eigenen Unternehmen zu dienen scheinen. In jedem Fall aber stellt sich die Frage, welcher Blick auf den Menschen hier erkennbar wird und wie er zu bewerten ist. Um in eine kritische Auseinandersetzung mit diesen Ideen zu treten, werfen wir einen Blick auf die Geschichte radikal-utopischen Denkens über den Tod.
+    </p>
+    <p>
+    Wir werden über die biopolitischen Visionen der jungen Sowjetunion sprechen und über die ganz andersgearteten Ideen von der »Abschaffung des Todes« bei Benjamin, Adorno und Bloch. An drei Abenden wollen wir so erhellen, ob und wenn in welcher Form Ideen von der »Überwindung des Todes« heute noch ein positiver utopischer Gehalt zukommt und wo sie gefährlich werden.
+    <br> ●
+    </p>
+    </article>
+    
+    <article id="schnetker_text">
+    <h3>    
+    <span class="a">Max&nbsp;Schnetker</span> <br>
+    <span class="c">Transhumanismus</span> 
+    <span class="c">zwischen</span>
+    <span class="c">Mythologie</span>
+    <span class="c">und</span>
+    <span class="c">Ideologie</span>    </h3>
+    <p class="article">
+    Unter dem Begriff Transhumanismus wird ein Konglomerat neuer Ideologien verhandelt, die sich um die Verbesserung oder sogar Überwindung der menschlichen Konstitution durch Technologie drehen. Obwohl die Ideen des Transhumanismus inhaltlich stark durch Science-Fiction geprägt sind, sind sie dennoch Stichwortgeber finanzstarker Forschungsprogramme. Dies liegt nicht zuletzt daran, dass transhumanistische Ideen unter Risikokapitalist*innen en vogue sind.
+    </p>
+    <p>
+    Im deutschsprachigen Raum beflügeln Ideen aus dem Transhumanismus Debatten in den Geisteswissenschaften und füllen periodisch die Feuilletons der Zeitungen. Der Horizont dieser geisteswissenschaftlichen und journalistischen Aneignungen des Themas ist meist kritisch: Gewarnt wird vor einem drohenden Verlust des Menschseins, der mit den Vorteilen technischer Veränderungen auszutarieren sei.
+    </p>
+    <p>
+    Einig sind sich Enthusiast*innen wie Kritiker*innen allerdings meist in einer Annahme: Sie gehen davon aus, dass die Behauptungen des Transhumanismus über die baldige technische Steuerbarkeit der menschlichen Konstitution realistisch sind. Anders sieht die Reaktion vieler Fachwissenschaftler*innen aus den Bereichen Molekularbiologie, Genetik, KI-Forschung oder Nanotechnologie aus: Sie schlagen angesichts der Behauptungen des Transhumanismus die Hände über dem Kopf zusammen.
+    </p>
+    <p>
+    In dieser Veranstaltung soll dargelegt werden, dass der Transhumanismus als Neuformulierung mythologischer Narrative zu begreifen ist, welche im Digitalen Kapitalismus eine spezifische ideologische Funktion erfüllen. Die Hauptgefahr des Transhumanismus liegt nicht darin, dass die von ihm behaupteten technologischen Eingriffe ins Menschsein Realität werden. Sie liegt darin, dass Eugenik, Sozialdarwinismus, Antiegalitarismus und neoliberale Marktgläubigkeit zu seinen Stichwortgebern gehören. Damit wird er zur paradigmatischen Ideologie von Gesellschaften, die auf radikale Weise Wohlstand in den Händen einer kleinen Zahl von Technologieunternehmen konzentrieren.
+    </p>
+    <p>
+    Zum Beginn der Veranstaltung wird es einen kurzen Inputvortrag geben, der einen Überblick über das Thema gibt. Anschließend folgt eine Lesung aus dem Buch »Transhumanistische Mythologie: Rechte Utopien einer technologischen Erlösung durch künstliche Intelligenz«, dass sich mit einer spezifischen Spielart des Transhumanismus befasst: dem Glauben an eine gottgleiche künstliche Superintelligenz.<br> ●
+    </p>
+    
+    <p class="person">
+    Max Schnetker promoviert an der Uni Bonn in Soziologie zu technizistischen Ideologien im Digitalen Kapitalismus.
+    <br> ●
+    </p>
+    </article>  
+    
+    <article id="hagemeister_text">
+    <h3>    
+    <span class="a">Michael&nbsp;Hagemeister</span> <br>
+    <span class="c">»Unser</span>
+    <span class="c">Körper</span>
+    <span class="c">muss</span>
+    <span class="c">unser</span>
+    <span class="c">Werk</span>
+    <span class="c">sein!«</span> <br>
+    <span class="c">Biopolitische</span>
+    <span class="c">Projekte</span>
+    <span class="c">der</span>
+    <span class="c">frühen</span>
+    <span class="c">Sowjetzeit</span>
+    </h3>
+    <p class="article">
+    Die Erfolge der Humangenetik und der Erforschung künstlicher Intelligenz haben in jüngster Zeit die Frage nach den Möglichkeiten und Grenzen einer Verwandlung der menschlichen Natur und der Erschaffung eines perfekten, übermächtigen und sogar unsterblichen Neuen Menschen wieder in die öffentliche Diskussion gebracht.
+    </p>
+    <p>
+    Dabei zeigt ein Blick in die Geschichte, dass das Projekt des Neuen Menschen eine lange Tradition hat. Nirgendwo wurde es freilich mit solcher Radikalität konzipiert – und zeitweise auch zum Ziel staatlicher Politik erhoben – wie in der frühen Sowjetzeit, wo sich schier grenzenlose Wissenschaftsgläubigkeit mit totalitärem Gestaltungswillen verband.
+    </p>
+    <p>
+    Im Vortrag werden sowohl die damaligen Entwürfe des Neuen Menschen als auch die Verfahren zu seiner »Herstellung« vorgestellt, anschließend werden ihre Bezügen zum modernen Transhumanismus aufgezeigt und kritisch bewertet. Thematisiert wird folgendes:
+    </p>
+    Verbesserung des Menschenmaterials – Konditionierung, Selektion, Züchtung und Vernichtung; Überwindung der natürlichen Reproduktion – »Menschenproduktion«, »Anthropotechnik«, »Anthropourgie«; Überwindung der Begrenztheit in Raum und Zeit – Omnipräsenz und Unsterblichkeit; Überwindung der Vereinzelung – physiologischer Kollektivismus, Beseitigung der Geschlechtsunterschiede; Erlösung der »Opfer der Geschichte« – Auferweckung der Verstorbenen.
+    <br> ●
+    </p>
+    <p class="person">
+    Michael Hagemeister ist Historiker und Slawist. Zusammen mit Boris Groys ist er Herausgeber des Sammelbandes »Die Neue Menschheit. Biopolitische Utopien in Russland zu Beginn des 20. Jahrhunderts.«
+    <br> ●
+    <p>
+    </article>
+    
+    <article id="wellmann_text">
+    <h3>
+    <span class="a">Leonie&nbsp;Wellmann</span> <br>
+    <span class="c">Materialistischen</span>
+    <span class="c">Deutungen</span>
+    <span class="c">von</span>
+    <span class="c">Auferstehung</span>
+    <span class="c">und</span>
+    <span class="c">Erlösung</span>
+    <span class="c">in</span>
+    <span class="c">der</span>
+    <span class="c">kritischen</span>
+    <span class="c">Theorie</span>    
+    </h3>
+    <p>
+    Als Reaktion auf den Tod Kracauers schreibt Bazon Brock 1967: »Der Tod muß abgeschafft werden, diese verdammte Schweinerei muß aufhören. […] Der Tod Siegfried Kracauers ist wie jeder ein ungeheuerlicher Skandal, gegen den ich protestiere.«
+    </p>
+    <p>
+    Solches Aufbegehren richtet sich gegen das ideologische »Einvernehmen mit dem Tod« (Marcuse). Für das utopische Bewusstsein ist die Abschaffung des Todes »nicht etwas Schreckliches«, sondern das, »was man eigentlich will« (Adorno). Kritische Theorie ist zugleich solidarisch mit den Lebenden, deren Leiden sie im Diesseits abschaffen will, und hellhörig für »das stumme Plädoyer der Toten« (Kracauer).
+    </p>
+    <p> 
+    Kontroversen über die Abschaffung des Todes führt die kritische Theorie seit ihren Anfängen. Der Vortrag fragt danach, warum und wie sich theologische Motive wie die »Auferstehung des Fleisches« als Konvergenzpunkte von Theologie und Materialismus verstehen lassen – und warum Adorno zufolge die Auferstehung der Toten »auf dem Autofriedhof« stattfinden müsste.
+    </p>
+    <p>
+    Historisch rückblickend lässt sich fragen, ob der Tod tatsächlich »die härteste Gegenutopie« (Bloch) darstellt, oder ob diese in der nationalsozialistischen Todesmaschinerie schon verwirklicht wurde. Für die überlebenden kritischen Theoretiker wird angesichts dessen die jüdisch-messianistische »Hoffnung auf Erlösung, die wir für die Toten hegen« (Benjamin) umso fragiler, die Notwendigkeit der erinnernden Solidarität mit den Opfern umso dringlicher.
+    <br> ●
+    </p>
+    <p class="person">
+    Leonie Wellmann promoviert an der Goethe-Universität Frankfurt über das Verhältnis von Sprachkritik, Theologie und Literatur bei Adorno, Benjamin, Kracauer und Scholem.
+    <br> ●
+    </p>
+    </article>
+</body> 
 </html>
-
-<!--checkbox default-->
-<script 
-    type=text/javascript>
-    document.getElementById("collapsible").checked = false;
-</script>
